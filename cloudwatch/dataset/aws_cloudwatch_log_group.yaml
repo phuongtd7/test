@@ -1,0 +1,42 @@
+- type: aws_cloudwatch_log_group
+  attribute:
+    name: syslog
+    retention_in_days: 180
+
+- type: aws_cloudwatch_log_group
+  attribute:
+    name: docker
+    retention_in_days: 180
+
+- type: aws_cloudwatch_log_group
+  attribute:
+    name: amp_platform_docker
+    retention_in_days: 180
+
+- type: aws_cloudwatch_log_group
+  attribute:
+    name: user_data
+    retention_in_days: 180
+
+- type: aws_cloudwatch_log_group
+  attribute:
+    name: modsec_audit
+    retention_in_days: 180
+
+- type: aws_cloudwatch_log_group
+  attribute:
+    name: modsec_debug
+    retention_in_days: 180
+
+type: aws_cloudwatch_log_group
+  attribute:
+    name: waf_nginx_access
+    retention_in_days: 180
+
+- type: aws_cloudwatch_log_group
+  attribute:
+    name: waf_nginx_error
+    retention_in_days: 180
+
+
+

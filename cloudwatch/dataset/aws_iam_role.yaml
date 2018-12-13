@@ -1,0 +1,9 @@
+- type: aws_iam_role
+  attributes:
+    name: EC2ActionsAccess
+    path: /actions/
+    assume_role_policy: ./assets/swf_sts_assume_role_policy.json
+- type: aws_iam_role
+  attributes:
+    name: vpc_flow_logs_policy
+    vpc_flow_logs_policy: /assets/vpc_flow_logs_policy.json
